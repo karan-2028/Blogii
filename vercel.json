@@ -3,7 +3,10 @@
     "builds": [
         {
             "src": "app.js",
-            "use": "@vercel/node"
+            "use": "@vercel/node",
+            "config": {
+                "timeout": 30000 // Increase timeout to 30 seconds
+            }
         }
     ],
     "routes": [
